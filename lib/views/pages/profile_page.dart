@@ -69,7 +69,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 });
               },
             ),
-            Image.asset('assets/images/generic.jpg'),
+            GestureDetector(
+              onTap: () {
+                print('this image is selected');
+              },
+              child: Image.asset('assets/images/generic.jpg'),
+            ),
           ],
         ),
       ),
